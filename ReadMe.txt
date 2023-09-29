@@ -29,8 +29,10 @@ Salta(17.x.x.x)SAL
 Tucuman(18.x.x.x)TUC
 
 Servidores:
-DNS ServerCM1= 10.0.0.2
+DNS ServerCM1 = 10.0.0.2
+ServerMail = 10.0.0.3
 ServerCM2 = 11.0.0.2
+ServerSistemas = 11.3.0.2 
 ServerSF = 12.1.0.2
 ServerROS = 13.1.0.2
 ServerLP = 14.1.0.2
