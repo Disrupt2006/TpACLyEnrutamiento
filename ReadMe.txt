@@ -40,3 +40,143 @@ ServerCR = 15.1.0.2
 ServerCOR = 16.1.0.2
 ServerSAL = 17.1.0.2
 ServerTUC = 18.1.0.2
+
+
+
+COPIAR Y PEGAR EN CADA ROUTER (MAS ABAJO CONFIGURACION GENERAL ACL)
+
+SANTA FE:
+access-list 101 permit tcp 12.0.0.1 host 12.1.0.2 eq 443
+access-list 101 permit tcp 12.1.0.1 host 12.1.0.2 eq 443
+access-list 101 permit tcp 12.2.0.1 host 12.1.0.2 eq 443
+access-list 101 permit tcp 12.3.0.1 host 12.1.0.2 eq 443
+access-list 101 permit tcp 12.4.0.1 host 12.1.0.2 eq 443
+access-list 101 permit tcp 12.2.0.1 host any eq 80
+access-list 101 permit tcp 12.2.0.1 host any eq 443
+access-list 101 permit tcp 12.2.0.1 host any eq 53
+access-list 101 permit tcp any host 10.0.0.2 eq 110
+access-list 101 permit tcp any host 10.0.0.2 eq 587
+access-list 101 permit tcp any host 10.0.0.2 eq 80
+access-list 101 permit tcp any host 10.0.0.2 eq 443
+access-list 101 permit tcp any host 10.0.0.2 eq 53
+
+ROSARIO:
+access-list 101 permit tcp 13.0.0.1 host 13.1.0.2 eq 443
+access-list 101 permit tcp 13.1.0.1 host 13.1.0.2 eq 443
+access-list 101 permit tcp 13.2.0.1 host 13.1.0.2 eq 443
+access-list 101 permit tcp 13.3.0.1 host 13.1.0.2 eq 443
+access-list 101 permit tcp 13.4.0.1 host 13.1.0.2 eq 443
+access-list 101 permit tcp 13.2.0.1 host any eq 80
+access-list 101 permit tcp 13.2.0.1 host any eq 443
+access-list 101 permit tcp 13.2.0.1 host any eq 53
+access-list 101 permit tcp any host 10.0.0.2 eq 110
+access-list 101 permit tcp any host 10.0.0.2 eq 587
+access-list 101 permit tcp any host 10.0.0.2 eq 80
+access-list 101 permit tcp any host 10.0.0.2 eq 443
+access-list 101 permit tcp any host 10.0.0.2 eq 53
+
+LA PLATA: 
+access-list 101 permit tcp 14.0.0.1 host 14.1.0.2 eq 443
+access-list 101 permit tcp 14.1.0.1 host 14.1.0.2 eq 443
+access-list 101 permit tcp 14.2.0.1 host 14.1.0.2 eq 443
+access-list 101 permit tcp 14.3.0.1 host 14.1.0.2 eq 443
+access-list 101 permit tcp 14.4.0.1 host 14.1.0.2 eq 443
+access-list 101 permit tcp 14.2.0.1 host any eq 80
+access-list 101 permit tcp 14.2.0.1 host any eq 443
+access-list 101 permit tcp 14.2.0.1 host any eq 53
+access-list 101 permit tcp any host 10.0.0.2 eq 110
+access-list 101 permit tcp any host 10.0.0.2 eq 587
+access-list 101 permit tcp any host 10.0.0.2 eq 80
+access-list 101 permit tcp any host 10.0.0.2 eq 443
+access-list 101 permit tcp any host 10.0.0.2 eq 53
+
+COMODORO RIVADAVIA: 
+access-list 101 permit tcp 15.0.0.1 host 15.1.0.2 eq 443
+access-list 101 permit tcp 15.1.0.1 host 15.1.0.2 eq 443
+access-list 101 permit tcp 15.2.0.1 host 15.1.0.2 eq 443
+access-list 101 permit tcp 15.3.0.1 host 15.1.0.2 eq 443
+access-list 101 permit tcp 15.4.0.1 host 15.1.0.2 eq 443
+access-list 101 permit tcp 15.2.0.1 host any eq 80
+access-list 101 permit tcp 15.2.0.1 host any eq 443
+access-list 101 permit tcp 15.2.0.1 host any eq 53
+access-list 101 permit tcp any host 10.0.0.2 eq 110
+access-list 101 permit tcp any host 10.0.0.2 eq 587
+access-list 101 permit tcp any host 10.0.0.2 eq 80
+access-list 101 permit tcp any host 10.0.0.2 eq 443
+access-list 101 permit tcp any host 10.0.0.2 eq 53
+
+CORDOBA:
+access-list 101 permit tcp 16.0.0.1 host 16.1.0.2 eq 443
+access-list 101 permit tcp 16.1.0.1 host 16.1.0.2 eq 443
+access-list 101 permit tcp 16.2.0.1 host 16.1.0.2 eq 443
+access-list 101 permit tcp 16.3.0.1 host 16.1.0.2 eq 443
+access-list 101 permit tcp 16.4.0.1 host 16.1.0.2 eq 443
+access-list 101 permit tcp 16.2.0.1 host any eq 80
+access-list 101 permit tcp 16.2.0.1 host any eq 443
+access-list 101 permit tcp 16.2.0.1 host any eq 53
+access-list 101 permit tcp any host 10.0.0.2 eq 110
+access-list 101 permit tcp any host 10.0.0.2 eq 587
+access-list 101 permit tcp any host 10.0.0.2 eq 80
+access-list 101 permit tcp any host 10.0.0.2 eq 443
+access-list 101 permit tcp any host 10.0.0.2 eq 53
+
+SALTA: 
+access-list 101 permit tcp 17.0.0.1 host 17.1.0.2 eq 443
+access-list 101 permit tcp 17.1.0.1 host 17.1.0.2 eq 443
+access-list 101 permit tcp 17.2.0.1 host 17.1.0.2 eq 443
+access-list 101 permit tcp 17.3.0.1 host 17.1.0.2 eq 443
+access-list 101 permit tcp 17.4.0.1 host 17.1.0.2 eq 443
+access-list 101 permit tcp 17.2.0.1 host any eq 80
+access-list 101 permit tcp 17.2.0.1 host any eq 443
+access-list 101 permit tcp 17.2.0.1 host any eq 53
+access-list 101 permit tcp any host 10.0.0.2 eq 110
+access-list 101 permit tcp any host 10.0.0.2 eq 587
+access-list 101 permit tcp any host 10.0.0.2 eq 80
+access-list 101 permit tcp any host 10.0.0.2 eq 443
+access-list 101 permit tcp any host 10.0.0.2 eq 53
+
+TUCUMAN:
+access-list 101 permit tcp 18.0.0.1 host 18.1.0.2 eq 443
+access-list 101 permit tcp 18.1.0.1 host 18.1.0.2 eq 443
+access-list 101 permit tcp 18.2.0.1 host 18.1.0.2 eq 443
+access-list 101 permit tcp 18.3.0.1 host 18.1.0.2 eq 443
+access-list 101 permit tcp 18.4.0.1 host 18.1.0.2 eq 443
+access-list 101 permit tcp 18.2.0.1 host any eq 80
+access-list 101 permit tcp 18.2.0.1 host any eq 443
+access-list 101 permit tcp 18.2.0.1 host any eq 53
+access-list 101 permit tcp any host 10.0.0.2 eq 110
+access-list 101 permit tcp any host 10.0.0.2 eq 587
+access-list 101 permit tcp any host 10.0.0.2 eq 80
+access-list 101 permit tcp any host 10.0.0.2 eq 443
+access-list 101 permit tcp any host 10.0.0.2 eq 53
+
+
+
+CONFIGURACION GENERAL ACL (NO COPIAR, SOLO PARA DESARROLLO)
+SEGUIR ORDEN DE ACL COMO ESTA:
+
+Cada uno de los departamentos, estén en cualquier Locación, tienen acceso https al sistema de su sector.
+access-list 101 permit tcp x.0.0.1 host x.1.0.2 eq 443
+access-list 101 permit tcp x.1.0.1 host x.1.0.2 eq 443
+access-list 101 permit tcp x.2.0.1 host x.1.0.2 eq 443
+access-list 101 permit tcp x.3.0.1 host x.1.0.2 eq 443
+access-list 101 permit tcp x.4.0.1 host x.1.0.2 eq 443
+
+Las terminales de Gerencia pueden acceder a cualquiera de los sistemas de los distintos departamentos.
+(para añadir mas sistemas copiar linea y cambiar puerto por servicio requerido ej:(eq 200))
+access-list 101 permit tcp x.2.0.1 host any eq 80
+access-list 101 permit tcp x.2.0.1 host any eq 443
+access-list 101 permit tcp x.2.0.1 host any eq 53
+
+La organización cuenta con un correo electrónico que puede ser accedido de cualquier terminal
+(activar mail en server dns o hacer otro server para mail)
+access-list 101 permit tcp any host 10.0.0.2 eq 110
+access-list 101 permit tcp any host 10.0.0.2 eq 587
+
+Todas las terminales de la sucursales y casa Matriz puede navegar http y https por internet.
+(activar en server dns el http y https):
+access-list 101 permit tcp any host 10.0.0.2 eq 80
+access-list 101 permit tcp any host 10.0.0.2 eq 443
+(servicio adicional dns)
+access-list 101 permit tcp any host 10.0.0.2 eq 53
+
