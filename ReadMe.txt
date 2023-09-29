@@ -44,6 +44,19 @@ ServerTUC = 18.1.0.2
 
 
 COPIAR Y PEGAR EN CADA ROUTER (MAS ABAJO CONFIGURACION GENERAL ACL)
+CASA MADRE 1:
+access-list 101 permit tcp any host 10.0.0.2 eq 110
+access-list 101 permit tcp any host 10.0.0.2 eq 587
+access-list 101 permit tcp any host 10.0.0.2 eq 80
+access-list 101 permit tcp any host 10.0.0.2 eq 443
+access-list 101 permit tcp any host 10.0.0.2 eq 53
+
+CASA MADRE 2:
+access-list 101 permit tcp any host 10.0.0.2 eq 110
+access-list 101 permit tcp any host 10.0.0.2 eq 587
+access-list 101 permit tcp any host 10.0.0.2 eq 80
+access-list 101 permit tcp any host 10.0.0.2 eq 443
+access-list 101 permit tcp any host 10.0.0.2 eq 53
 
 SANTA FE:
 access-list 101 permit tcp 12.0.0.1 host 12.1.0.2 eq 443
